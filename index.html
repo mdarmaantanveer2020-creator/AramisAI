@@ -885,7 +885,7 @@
             <div class="card-header">
               <div class="card-header-left">
                 <div class="card-dot"></div>
-                <span class="card-name">Gemini Flash</span>
+                <span class="card-name">Gemini 2.0 Flash</span>
               </div>
               <span class="card-wc" id="wc-gemini">— words</span>
             </div>
@@ -1028,10 +1028,10 @@
 
   /**
    * Query Google Gemini Flash
-   * POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=KEY
+   * POST https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent?key=KEY
    */
   async function queryGemini(prompt, apiKey) {
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
     const res = await fetch(url, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -1332,3 +1332,4 @@
 </script>
 </body>
 </html>
+ 
